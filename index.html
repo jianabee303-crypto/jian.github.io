@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,101 +13,128 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
-      color: #111827;
       background: #ffffff;
-      line-height: 1.75;
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
     }
 
     .page {
-      max-width: 1180px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 48px 28px;
+      padding: 28px 32px 60px;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1.35fr 0.9fr;
-      gap: 48px;
-      align-items: start;
-      margin-bottom: 48px;
-    }
-
-    .label {
-      font-size: 12px;
+    .meta {
+      font-size: 11px;
       letter-spacing: 0.18em;
       color: #6b7280;
       font-weight: 700;
-      margin-bottom: 14px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 25px;
       line-height: 1.35;
-      margin: 0 0 22px;
       letter-spacing: -0.04em;
+      margin: 0 0 12px;
+      font-weight: 800;
+    }
+
+    .tags {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 420px;
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: 28px;
+      background: #f3f4f6;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.9fr;
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 38px;
     }
 
     p {
-      font-size: 16px;
-      margin: 0 0 16px;
+      font-size: 15px;
+      margin: 0 0 14px;
       word-break: keep-all;
     }
 
     strong {
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .snapshot {
       background: #f8f9fb;
-      border-radius: 28px;
-      padding: 28px;
+      border-radius: 24px;
+      padding: 24px;
     }
 
     .snapshot-title {
-      font-size: 12px;
-      letter-spacing: 0.24em;
+      font-size: 11px;
+      letter-spacing: 0.22em;
       color: #6b7280;
       font-weight: 800;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
     }
 
     .snapshot-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
     }
 
     .snapshot-item {
       background: #ffffff;
       border-radius: 18px;
-      padding: 18px 16px;
-      min-height: 94px;
+      padding: 15px 14px;
+      min-height: 82px;
     }
 
     .snapshot-item span {
       display: block;
-      font-size: 13px;
+      font-size: 12px;
       color: #6b7280;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .snapshot-item b {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.45;
+      letter-spacing: -0.03em;
     }
 
     .snapshot-desc {
-      font-size: 14px;
+      font-size: 13px;
       color: #374151;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .source {
       font-size: 13px;
       color: #6b7280;
+      margin-bottom: 0;
     }
 
     .source a {
@@ -115,62 +143,71 @@
       text-underline-offset: 3px;
     }
 
-    .columns {
+    .point-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 34px;
-      margin-bottom: 42px;
+      margin-bottom: 36px;
     }
 
-    .column h2 {
-      font-size: 18px;
-      margin: 0 0 14px;
+    .point h2 {
+      font-size: 17px;
       letter-spacing: -0.03em;
+      margin: 0 0 12px;
+      font-weight: 800;
     }
 
-    .column p {
-      font-size: 15.5px;
+    .point p {
+      font-size: 14.5px;
       color: #1f2937;
     }
 
     .insight {
       border-top: 1px solid #e5e7eb;
-      padding-top: 28px;
-      max-width: 920px;
+      padding-top: 24px;
+      max-width: 900px;
     }
 
     .insight h2 {
-      font-size: 20px;
-      margin: 0 0 14px;
+      font-size: 18px;
+      margin: 0 0 12px;
       letter-spacing: -0.03em;
     }
 
     .insight p {
-      font-size: 16px;
+      font-size: 15px;
       color: #1f2937;
     }
 
     @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-
-      .columns {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-
-      h1 {
-        font-size: 25px;
-      }
-
       .page {
-        padding: 36px 20px;
+        padding: 24px 20px 48px;
+      }
+
+      .hero-image {
+        height: 300px;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .point-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
       }
     }
 
     @media (max-width: 520px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .hero-image {
+        height: 240px;
+        border-radius: 18px;
+      }
+
       .snapshot-grid {
         grid-template-columns: 1fr;
       }
@@ -181,12 +218,21 @@
 <body>
   <main class="page">
 
-    <section class="hero">
+    <div class="meta">BEAUTY / TIKTOK / INGREDIENT-LED CONTENT</div>
+
+    <h1>성분을 설명하는 뷰티 콘텐츠, 소비자의 신뢰 기준이 되다</h1>
+
+    <div class="tags">
+      광고: 유료광고 X &nbsp;&nbsp; | &nbsp;&nbsp;
+      주제: 성분 설명 · 타깃층 · 수치적 검증
+    </div>
+
+    <section class="hero-image">
+      <img src="beauty-toner.jpg" alt="성분에디터 토너 틱톡 숏폼 콘텐츠 이미지">
+    </section>
+
+    <section class="intro-grid">
       <div>
-        <div class="label">BEAUTY INSIGHT</div>
-
-        <h1>성분을 설명하는 뷰티 콘텐츠, 소비자의 신뢰 기준이 되다</h1>
-
         <p>
           성분에디터 토너를 다룬 틱톡 숏폼 콘텐츠입니다. 유료 광고가 아닌 개인 사용 경험을 바탕으로,
           단순히 “좋았다”는 후기를 넘어 <strong>어떤 성분이 왜 유효한지</strong>, 그리고 실제 피부 경험과
@@ -194,13 +240,14 @@
         </p>
 
         <p>
-          최근 뷰티 콘텐츠는 감각적인 추천에서 정보 기반 설득으로 이동하고 있습니다. 제품 공식 설명과
-          인플루언서 마케팅에서도 성분의 기능, 타깃 피부층, 수치적 근거를 함께 제시하는 방식이 중요해지고 있습니다.
+          최근 뷰티 콘텐츠는 감각적인 추천에서 정보 기반 설득으로 이동하고 있습니다.
+          제품 공식 설명과 인플루언서 마케팅에서도 성분의 기능, 타깃 피부층, 수치적 근거를 함께 제시하는
+          방식이 중요해지고 있습니다.
         </p>
       </div>
 
       <aside class="snapshot">
-        <div class="snapshot-title">CONTENT SNAPSHOT</div>
+        <div class="snapshot-title">Content Snapshot</div>
 
         <div class="snapshot-grid">
           <div class="snapshot-item">
@@ -214,7 +261,7 @@
           </div>
 
           <div class="snapshot-item">
-            <span>핵심 포인트</span>
+            <span>핵심 키워드</span>
             <b>성분 · 타깃 · 검증</b>
           </div>
 
@@ -231,33 +278,35 @@
 
         <p class="source">
           원문 콘텐츠:
-          <a href="#" target="_blank">TikTok – 성분에디터 토너 숏폼</a>
+          <a href="https://vt.tiktok.com/ZSQpubnWP/" target="_blank" rel="noopener">
+            TikTok – 성분에디터 토너 숏폼
+          </a>
         </p>
       </aside>
     </section>
 
-    <section class="columns">
-      <article class="column">
-        <h2>1. 자세한 성분 설명</h2>
+    <section class="point-grid">
+      <article class="point">
+        <h2>1) 자세한 성분 설명</h2>
         <p>
-          특히 미국 시장에서는 제품 안전성과 성분에 대한 민감도가 높기 때문에, 인플루언서의 추천만으로
-          구매를 결정하기보다 성분의 역할과 효능을 구체적으로 확인하려는 경향이 강합니다.
+          특히 미국 시장에서는 제품 안전성과 성분에 대한 민감도가 높기 때문에,
+          인플루언서의 추천만으로 구매를 결정하기보다 성분의 역할과 효능을 구체적으로 확인하려는 경향이 강합니다.
           이에 따라 브랜드는 피부 전문가와의 협업, 성분 중심 콘텐츠, 사용 근거 제시 등을 통해
           소비자의 신뢰를 확보하고 있습니다.
         </p>
       </article>
 
-      <article class="column">
-        <h2>2. 명확한 타깃층 제안</h2>
+      <article class="point">
+        <h2>2) 명확한 타깃층 제안</h2>
         <p>
-          이제 뷰티 제품은 “모든 사람에게 좋은 제품”으로 소개되기보다, 어떤 피부 타입과 연령대,
-          피부 고민을 가진 소비자에게 적합한지를 명확히 제시하는 것이 중요합니다.
+          이제 뷰티 제품은 “모든 사람에게 좋은 제품”으로 소개되기보다,
+          어떤 피부 타입과 연령대, 피부 고민을 가진 소비자에게 적합한지를 명확히 제시하는 것이 중요합니다.
           이는 개인화 소비 흐름과도 연결되며, 소비자는 자신의 피부 상태에 맞는 제품인지 판단할 수 있는 정보를 원하고 있습니다.
         </p>
       </article>
 
-      <article class="column">
-        <h2>3. 성분 효과의 수치적 검증</h2>
+      <article class="point">
+        <h2>3) 성분 효과의 수치적 검증</h2>
         <p>
           소비자는 단순히 특정 성분이 포함되었다는 사실만으로는 충분히 설득되지 않습니다.
           해당 성분이 어떤 효과를 보였는지, 어느 정도의 개선 가능성을 기대할 수 있는지 등
