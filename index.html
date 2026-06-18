@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Insight</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: #111827;
+      background: #ffffff;
+      line-height: 1.75;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 48px 28px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 0.9fr;
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 48px;
+    }
+
+    .label {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      color: #6b7280;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.35;
+      margin: 0 0 22px;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0 0 16px;
+      word-break: keep-all;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    .snapshot {
+      background: #f8f9fb;
+      border-radius: 28px;
+      padding: 28px;
+    }
+
+    .snapshot-title {
+      font-size: 12px;
+      letter-spacing: 0.24em;
+      color: #6b7280;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .snapshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .snapshot-item {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 18px 16px;
+      min-height: 94px;
+    }
+
+    .snapshot-item span {
+      display: block;
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .snapshot-item b {
+      display: block;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .snapshot-desc {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 14px;
+    }
+
+    .source {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .source a {
+      color: #374151;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 34px;
+      margin-bottom: 42px;
+    }
+
+    .column h2 {
+      font-size: 18px;
+      margin: 0 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .column p {
+      font-size: 15.5px;
+      color: #1f2937;
+    }
+
+    .insight {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 28px;
+      max-width: 920px;
+    }
+
+    .insight h2 {
+      font-size: 20px;
+      margin: 0 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .insight p {
+      font-size: 16px;
+      color: #1f2937;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .columns {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .page {
+        padding: 36px 20px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .snapshot-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <section class="hero">
+      <div>
+        <div class="label">BEAUTY INSIGHT</div>
+
+        <h1>성분을 설명하는 뷰티 콘텐츠, 소비자의 신뢰 기준이 되다</h1>
+
+        <p>
+          성분에디터 토너를 다룬 틱톡 숏폼 콘텐츠입니다. 유료 광고가 아닌 개인 사용 경험을 바탕으로,
+          단순히 “좋았다”는 후기를 넘어 <strong>어떤 성분이 왜 유효한지</strong>, 그리고 실제 피부 경험과
+          어떻게 연결되는지를 중심으로 전달했습니다.
+        </p>
+
+        <p>
+          최근 뷰티 콘텐츠는 감각적인 추천에서 정보 기반 설득으로 이동하고 있습니다. 제품 공식 설명과
+          인플루언서 마케팅에서도 성분의 기능, 타깃 피부층, 수치적 근거를 함께 제시하는 방식이 중요해지고 있습니다.
+        </p>
+      </div>
+
+      <aside class="snapshot">
+        <div class="snapshot-title">CONTENT SNAPSHOT</div>
+
+        <div class="snapshot-grid">
+          <div class="snapshot-item">
+            <span>콘텐츠 유형</span>
+            <b>TikTok 숏폼</b>
+          </div>
+
+          <div class="snapshot-item">
+            <span>광고 여부</span>
+            <b>유료광고 X</b>
+          </div>
+
+          <div class="snapshot-item">
+            <span>핵심 포인트</span>
+            <b>성분 · 타깃 · 검증</b>
+          </div>
+
+          <div class="snapshot-item">
+            <span>소비 흐름</span>
+            <b>현실적 변화</b>
+          </div>
+        </div>
+
+        <p class="snapshot-desc">
+          성분 설명: 왜 좋은지 구체화 / 타깃층: 피부 타입과 연령대 명확화 /
+          수치 검증: 성분 효과에 대한 근거 요구 증가
+        </p>
+
+        <p class="source">
+          원문 콘텐츠:
+          <a href="#" target="_blank">TikTok – 성분에디터 토너 숏폼</a>
+        </p>
+      </aside>
+    </section>
+
+    <section class="columns">
+      <article class="column">
+        <h2>1. 자세한 성분 설명</h2>
+        <p>
+          특히 미국 시장에서는 제품 안전성과 성분에 대한 민감도가 높기 때문에, 인플루언서의 추천만으로
+          구매를 결정하기보다 성분의 역할과 효능을 구체적으로 확인하려는 경향이 강합니다.
+          이에 따라 브랜드는 피부 전문가와의 협업, 성분 중심 콘텐츠, 사용 근거 제시 등을 통해
+          소비자의 신뢰를 확보하고 있습니다.
+        </p>
+      </article>
+
+      <article class="column">
+        <h2>2. 명확한 타깃층 제안</h2>
+        <p>
+          이제 뷰티 제품은 “모든 사람에게 좋은 제품”으로 소개되기보다, 어떤 피부 타입과 연령대,
+          피부 고민을 가진 소비자에게 적합한지를 명확히 제시하는 것이 중요합니다.
+          이는 개인화 소비 흐름과도 연결되며, 소비자는 자신의 피부 상태에 맞는 제품인지 판단할 수 있는 정보를 원하고 있습니다.
+        </p>
+      </article>
+
+      <article class="column">
+        <h2>3. 성분 효과의 수치적 검증</h2>
+        <p>
+          소비자는 단순히 특정 성분이 포함되었다는 사실만으로는 충분히 설득되지 않습니다.
+          해당 성분이 어떤 효과를 보였는지, 어느 정도의 개선 가능성을 기대할 수 있는지 등
+          수치 기반의 검증 정보를 함께 요구하고 있습니다.
+          이는 뷰티 콘텐츠가 감성적 후기에서 근거 중심의 정보 콘텐츠로 확장되고 있음을 보여줍니다.
+        </p>
+      </article>
+    </section>
+
+    <section class="insight">
+      <h2>Insight</h2>
+      <p>
+        최근 소비자는 단기간의 드라마틱한 변화보다 현실적인 피부 개선과 꾸준한 관리 가능성을 더 중요하게 봅니다.
+        성분에디터 토너 콘텐츠 역시 이러한 흐름을 반영해, 성분 설명과 개인 경험을 연결함으로써 제품의 설득력을 높였습니다.
+        결국 현재 뷰티 마케팅의 핵심은 “좋다”가 아니라,
+        <strong>왜 좋은지, 누구에게 적합한지, 어떤 근거로 신뢰할 수 있는지</strong>를 설명하는 데 있습니다.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
